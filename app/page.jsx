@@ -22,7 +22,9 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <h2 className="font-bold">About Me</h2>
+      <div className="flex justify-center mt-20">
+        <h2 className="font-bold text-2xl">About Me</h2>
+      </div>
     </div>
   );
 }
