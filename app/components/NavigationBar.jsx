@@ -1,13 +1,13 @@
 "use client";
 function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
   return (
-    <div className="navbar bg-slate-100">
+    <div className="navbar bg-slate-400">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -22,7 +22,7 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-100 rounded-box w-52"
           >
             <li>
               <a>{firstOption}</a>
@@ -37,21 +37,18 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
         </div>
       </div>
       <div className="flex navbar-center">
-        <a className="btn btn-ghost normal-case text-2xl">
-          <div className="flex flex-col">
-            <p>{title}</p>
-            <p className="text-xs font-normal">Click me!</p>
-          </div>
+        <a className="btn btn-ghost normal-case text-4xl">
+            {title}
         </a>
       </div>
       <div className="navbar-end">
-        <button className="btn btn-ghost btn-circle">
+        <a className="btn btn-ghost btn-circle" href="https://www.linkedin.com/in/levyjonathan31/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            className="h-5 w-5"
+            className="h-7 w-7"
             fill="black"
             stroke="currentColor"
           >
@@ -62,12 +59,12 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
               d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
             />
           </svg>
-        </button>
-        <button className="btn btn-ghost btn-circle">
+        </a>
+        <a className="btn btn-ghost btn-circle" href="https://github.com/levyjonathan31">
           <div className="indicator">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-7 w-7"
               fill="black"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -80,7 +77,7 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
               />
             </svg>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   );
