@@ -11,13 +11,13 @@ export default function Home() {
         secondOption={"Experience"}
         thirdOption={"Portfolio"}
       />
-      <div className="flex justify-center text-center mt-10">
+      <div className="lg:flex justify-center text-center mt-10">
         <AvatarCircle
           imgSrc={"/images/photo-personal-portrait.jpg"}
           altText={"Potrait of Jonathan Levy"}
         />
         <div className="flex flex-col justify-center">
-          <p className="italic mx-5 text-xl">Hello, I'm</p>
+          <p className="italic mx-5 lg:text-xl">Hello, I'm</p>
           <p className="text-3xl font-bold my-2">Jonathan Levy</p>
           <p className="text-3xl text-slate-500">Software Developer</p>
         </div>
@@ -26,7 +26,7 @@ export default function Home() {
       <h2 className="font-bold text-3xl mb-5 text-center" id={"About"}>
         About Me
       </h2>
-      <p className="text-xl w-1/2 mx-auto bg-slate-300 text-center">
+      <p className="text-xl w-3/4 mx-auto bg-slate-300 text-center">
         I am a Senior at the University of Florida majoring in Computer Science.
         I am currently looking for full-time opportunities in Software
         Engineering. My interests include Machine Learning and Full Stack.
@@ -38,7 +38,7 @@ export default function Home() {
         <h2 className="font-bold text-3xl mb-5" id="Experience">
           Experience
         </h2>
-        <div className="flex justify-center">
+        <div className="lg:flex justify-center ">
           <Card
             title={"Open Source Club"}
             dateRange={"Jan 2023 - Present"}
@@ -66,7 +66,7 @@ export default function Home() {
         <h2 className="font-bold text-3xl mb-5" id="Portfolio">
           Portfolio
         </h2>
-        <div className="flex justify-center">
+        <div className="lg:flex justify-center">
           <Card
             title={"Personal Website"}
             dateRange={"September 2023 - Present"}
@@ -97,7 +97,7 @@ export default function Home() {
             buttonTitle={"GitHub"}
           />
         </div>
-        <div className="flex justify-center mt-20">
+        <div className="lg:flex justify-center">
           <Card
             title={"Manuela"}
             dateRange={"March 2023"}
@@ -129,7 +129,7 @@ export default function Home() {
             buttonTitle={"GitHub"}
           />
         </div>
-        <div className="flex justify-center mt-20">
+        <div className="lg:flex justify-center">
           <Card
             title={"Protest Plots"}
             dateRange={"September 2022 - December 2022"}
