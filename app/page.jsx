@@ -41,7 +41,7 @@ export default function Home() {
         <div className="flex justify-center">
           <Card
             title={"Open Source Club"}
-            dateRange={"Jaunuary 2023 - Present"}
+            dateRange={"Jan 2023 - Present"}
             description={"Technical Lead for Manim project"}
             image={"/images/osc-logo.png"}
             altText={"Open Source Club Logo"}
@@ -53,7 +53,7 @@ export default function Home() {
             description={
               "Full Stack Developer for Early Stage Startup Reactonaut"
             }
-            dateRange={"July 2023 - Aug 2023"}
+            dateRange={"July 2023 - August 2023"}
             image={"/images/reactonaut-logo.png"}
             altText={"Reactonaut Logo"}
             link={"https://github.com/asj9469/Reactonaut"}
@@ -100,7 +100,7 @@ export default function Home() {
         <div className="flex justify-center mt-20">
           <Card
             title={"Manuela"}
-            dateRange={"Mar 2023"}
+            dateRange={"March 2023"}
             description={
               "AI Counselor Hackathon Project for RoboTech 2023 built with Python"
             }
@@ -111,7 +111,7 @@ export default function Home() {
           />
           <Card
             title={"Manim"}
-            dateRange={"Jan 2023 - Present"}
+            dateRange={"January 2023 - Present"}
             description={
               "Open Source Project for creating computer animations built with Python and Manim Library"
             }
@@ -122,7 +122,7 @@ export default function Home() {
           />
           <Card
             title={"Former Personal Website"}
-            dateRange={"Nov 2022 - Sept 2023"}
+            dateRange={"November 2022 - September 2023"}
             description={"Personal Website built with HTML and CSS"}
             image={"/images/personal-icon.png"}
             link={"https://github.com/levyjonathan31/levyjonathan31.github.io"}
@@ -132,7 +132,7 @@ export default function Home() {
         <div className="flex justify-center mt-20">
           <Card
             title={"Protest Plots"}
-            dateRange={"Sept 2022 - Dec 2022"}
+            dateRange={"September 2022 - December 2022"}
             description={"Website for organizing protests built with React"}
             image={"/images/protestplots-image.png"}
             altText={"Protest Plots Image"}
@@ -141,7 +141,7 @@ export default function Home() {
           />
           <Card
             title={"You Owe Me"}
-            dateRange={"July 2022 - Aug 2022"}
+            dateRange={"July 2022 - August 2022"}
             description={
               "C++ Application for reducing transactions to resolve debts between friends"
             }
@@ -152,7 +152,7 @@ export default function Home() {
           />
           <Card
             title={"Minesweeper"}
-            dateRange={"July 2021 - Aug 2021"}
+            dateRange={"July 2021 - August 2021"}
             description={"Minesweeper Game built with C++"}
             image={"/images/minesweeper-image.png"}
             altText={"Minesweeper Image"}
