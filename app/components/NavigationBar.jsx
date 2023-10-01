@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+
 function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
   return (
     <div className="navbar bg-slate-400">
@@ -37,7 +39,12 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
         </div>
       </div>
       <div className="flex navbar-center">
-        <a className="btn btn-ghost normal-case text-4xl">{title}</a>
+        <Link
+          href="/JonathanLevy"
+          className="btn btn-ghost normal-case text-4xl"
+        >
+          {title}
+        </Link>
       </div>
       <div className="navbar-end">
         <a
