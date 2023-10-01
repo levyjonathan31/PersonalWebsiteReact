@@ -25,24 +25,25 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-100 rounded-box w-52"
           >
             <li>
-              <a>{firstOption}</a>
+              <a href={`#${firstOption}`}>{firstOption}</a>
             </li>
             <li>
-              <a>{secondOption}</a>
+              <a href={`#${secondOption}`}>{secondOption}</a>
             </li>
             <li>
-              <a>{thirdOption}</a>
+              <a href={`#${thirdOption}`}>{thirdOption}</a>
             </li>
           </ul>
         </div>
       </div>
       <div className="flex navbar-center">
-        <a className="btn btn-ghost normal-case text-4xl">
-            {title}
-        </a>
+        <a className="btn btn-ghost normal-case text-4xl">{title}</a>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-ghost btn-circle" href="https://www.linkedin.com/in/levyjonathan31/">
+        <a
+          className="btn btn-ghost btn-circle"
+          href="https://www.linkedin.com/in/levyjonathan31/"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -60,7 +61,10 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
             />
           </svg>
         </a>
-        <a className="btn btn-ghost btn-circle" href="https://github.com/levyjonathan31">
+        <a
+          className="btn btn-ghost btn-circle"
+          href="https://github.com/levyjonathan31"
+        >
           <div className="indicator">
             <svg
               xmlns="http://www.w3.org/2000/svg"

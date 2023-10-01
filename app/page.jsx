@@ -1,5 +1,6 @@
 import { NavigationBar } from "./components/NavigationBar.jsx";
 import { AvatarCircle } from "./components/AvatarCircle.jsx";
+import { Card } from "./components/Card.jsx";
 
 export default function Home() {
   return (
@@ -11,71 +12,112 @@ export default function Home() {
         thirdOption={"Portfolio"}
       />
       <div className="flex justify-center text-center mt-10">
-        <div className="w-1/2 flex">
-          <AvatarCircle
-            imgSrc={"/images/photo-personal-portrait.jpg"}
-            alt={"Personal Potrait of Jonathan Levy"}
+        <AvatarCircle
+          imgSrc={"/images/photo-personal-portrait.jpg"}
+          altText={"Potrait of Jonathan Levy"}
+        />
+        <div className="flex flex-col justify-center">
+          <p className="italic mx-5 text-xl">Hello, I'm</p>
+          <p className="text-3xl font-bold my-2">Jonathan Levy</p>
+          <p className="text-3xl text-slate-500">Software Developer</p>
+        </div>
+      </div>
+      <div className="w-3/4 divider before:bg-black after:bg-black mt-14 mx-auto"></div>
+      <h2 className="font-bold text-3xl mb-5 text-center" id={"About"}>
+        About Me
+      </h2>
+      <p className="text-xl w-1/2 mx-auto bg-slate-300 text-center">
+        I am a Senior at the University of Florida majoring in Computer Science.
+        I am currently looking for full-time opportunities in Software
+        Engineering. My interests include Machine Learning and Full Stack.
+        <br></br>
+        <br></br>Click my name at the top of the page to learn more about me!
+      </p>
+      <div className="w-3/4 divider before:bg-black after:bg-black mt-14 mx-auto"></div>
+      <div className="text-center">
+        <h2 className="font-bold text-3xl mb-5" id="Experience">
+          Experience
+        </h2>
+        <div className="flex justify-center">
+          <Card
+            title={"Open Source Club"}
+            dateRange={"Jaunuary 2023 - Present"}
+            description={"Technical Lead for Manim project"}
+            image={"/images/osc-logo.png"}
+            altText={"Open Source Club Logo"}
+            link={"https://github.com/ufosc"}
+            buttonTitle={"GitHub"}
           />
-          <p className="flex italic items-center mx-5 text-xl">
-            Hi, I'm Jonathan.<br></br>
-            Senior Computer Science Major at the University of Florida.
-          </p>
+          <Card
+            title={"Reactonaut"}
+            description={
+              "Full Stack Developer for Early Stage Startup Reactonaut"
+            }
+            dateRange={"July 2023 - Aug 2023"}
+            image={"/images/reactonaut-logo.png"}
+            altText={"Reactonaut Logo"}
+            link={"https://github.com/asj9469/Reactonaut"}
+            buttonTitle={"GitHub"}
+          />
         </div>
       </div>
-      <div className="w-3/4 divider before:bg-black after:bg-black mx-auto mt-12"></div>
+      <div className="w-3/4 divider before:bg-black after:bg-black mx-auto mt-14"></div>
       <div className="text-center">
-        <h2 className="font-bold text-3xl mb-5">About Me</h2>
-        <p className="text-xl w-1/2 mx-auto bg-slate-300">
-          I am a senior at the University of Florida majoring in Computer
-          Science. I am currently looking for full-time opportunities in
-          Software Engineering.
-        </p>
-      </div>
-      <div className="w-3/4 divider before:bg-black after:bg-black mx-auto mt-12"></div>
-      <div className="text-center">
-        <h2 className="font-bold text-3xl mb-5">Experience</h2>
-        <div className="flex justify-evenly">
-          <div className="card w-96 bg-slate-500 shadow-xl">
-            <figure className="px-10 pt-10">
-              <img
-                src="/images/osc-logo.png"
-                alt="Open Source Club Logo"
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title">Open Source Club</h2>
-              <p>Technical Lead of the Manim Project</p>
-              <div className="card-actions">
-                <a className="btn btn-primary" href="https://github.com/ufosc">
-                  OSC Github
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="card w-96 bg-slate-500 shadow-xl">
-            <figure className="px-10 pt-10">
-              <img
-                src="/images/osc-logo.png"
-                alt="Open Source Club Logo"
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title">Open Source Club</h2>
-              <p>Technical Lead of the Manim Project</p>
-              <div className="card-actions">
-                <a className="btn btn-primary" href="https://github.com/ufosc">
-                  OSC Github
-                </a>
-              </div>
-            </div>
-          </div>
+        <h2 className="font-bold text-3xl mb-5" id="Portfolio">
+          Portfolio
+        </h2>
+        <div className="flex justify-center mb- ">
+          <Card
+            title={"Personal Website"}
+            dateRange={"September 2023 - Present"}
+            description={"Personal Website built with React and TailwindCSS"}
+            image={"/images/react-logo.png"}
+            altText={"React Logo"}
+            link={"https://github.com/levyjonathan31/PersonalWebsiteReact"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
+            title={"Autoencoder"}
+            dateRange={"April 2023 - May 2023"}
+            description={"Autoencoder for Fashion MNIST built with PyTorch"}
+            image={"/images/autoencoder-image.png"}
+            altText={"Autoencoder Image"}
+            link={"https://github.com/levyjonathan31/MMLFinalProject"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
+            title={"Manuela"}
+            dateRange={"Mar 2023"}
+            description={
+              "AI Counselor Hackathon Project for RoboTech 2023 built with Python"
+            }
+            image={"/images/manuela-image.png"}
+            altText={"Manuela Logo"}
+            link={"https://github.com/ByteOfKathy/manuela"}
+            buttonTitle={"GitHub"}
+          />
         </div>
-      </div>
-      <div className="w-3/4 divider before:bg-black after:bg-black mx-auto mt-12"></div>
-      <div className="text-center">
-        <h2 className="font-bold text-3xl mb-5">Portfolio</h2>
+        <div className="flex justify-center mt-10">
+          <Card
+            title={"Manim"}
+            dateRange={"Jan 2023 - Present"}
+            description={
+              "Open Source Project for creating computer animations built with Python and Manim Library"
+            }
+            image={"/images/manim-logo.png"}
+            altText={"Manim Logo"}
+            link={"https://github.com/ufosc/manim-data-structures"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
+            title={"Former Personal Website"}
+            dateRange={"Nov 2022 - Sept 2023"}
+            description={"Personal Website built with HTML and CSS"}
+            image={"/images/personal-icon.png"}
+            link={"https://github.com/levyjonathan31/levyjonathan31.github.io"}
+            buttonTitle={"GitHub"}
+          />
+        </div>
       </div>
     </div>
   );
