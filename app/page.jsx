@@ -66,7 +66,7 @@ export default function Home() {
         <h2 className="font-bold text-3xl mb-5" id="Portfolio">
           Portfolio
         </h2>
-        <div className="flex justify-center mb- ">
+        <div className="flex justify-center">
           <Card
             title={"Personal Website"}
             dateRange={"September 2023 - Present"}
@@ -74,6 +74,17 @@ export default function Home() {
             image={"/images/react-logo.png"}
             altText={"React Logo"}
             link={"https://github.com/levyjonathan31/PersonalWebsiteReact"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
+            title={"Focus Fracture"}
+            dateRange={"May 2023 - July 2023"}
+            description={
+              "MERN Stack Web Application for tracking tasks built with React, Node.js, Express, and MongoDB"
+            }
+            image={"/images/task-image.png"}
+            altText={"Task Image"}
+            link={"https://github.com/levyjonathan31/focus-fracture"}
             buttonTitle={"GitHub"}
           />
           <Card
@@ -85,6 +96,8 @@ export default function Home() {
             link={"https://github.com/levyjonathan31/MMLFinalProject"}
             buttonTitle={"GitHub"}
           />
+        </div>
+        <div className="flex justify-center mt-20">
           <Card
             title={"Manuela"}
             dateRange={"Mar 2023"}
@@ -96,8 +109,6 @@ export default function Home() {
             link={"https://github.com/ByteOfKathy/manuela"}
             buttonTitle={"GitHub"}
           />
-        </div>
-        <div className="flex justify-center mt-10">
           <Card
             title={"Manim"}
             dateRange={"Jan 2023 - Present"}
@@ -115,6 +126,37 @@ export default function Home() {
             description={"Personal Website built with HTML and CSS"}
             image={"/images/personal-icon.png"}
             link={"https://github.com/levyjonathan31/levyjonathan31.github.io"}
+            buttonTitle={"GitHub"}
+          />
+        </div>
+        <div className="flex justify-center mt-20">
+          <Card
+            title={"Protest Plots"}
+            dateRange={"Sept 2022 - Dec 2022"}
+            description={"Website for organizing protests built with React"}
+            image={"/images/protestplots-image.png"}
+            altText={"Protest Plots Image"}
+            link={"https://github.com/tiffdefaria/ProtestPlots-app:"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
+            title={"You Owe Me"}
+            dateRange={"July 2022 - Aug 2022"}
+            description={
+              "C++ Application for reducing transactions to resolve debts between friends"
+            }
+            image={"/images/you-owe-me-image.png"}
+            altText={"You Owe Me Image"}
+            link={"https://github.com/akutuva21/You-Owe-Me"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
+            title={"Minesweeper"}
+            dateRange={"July 2021 - Aug 2021"}
+            description={"Minesweeper Game built with C++"}
+            image={"/images/minesweeper-image.png"}
+            altText={"Minesweeper Image"}
+            link={"https://github.com/levyjonathan31/Minesweeper-Project"}
             buttonTitle={"GitHub"}
           />
         </div>
