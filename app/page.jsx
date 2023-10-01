@@ -30,8 +30,8 @@ export default function Home() {
         I am a Senior at the University of Florida majoring in Computer Science.
         I am currently looking for full-time opportunities in Software
         Engineering. My interests include Machine Learning and Full Stack.
-        <br></br>
-        <br></br>Click my name at the top of the page to learn more about me!
+        {/* <br></br>
+        <br></br>Click my name at the top of the page to learn more about me! */}
       </p>
       <div className="w-3/4 divider before:bg-black after:bg-black mt-14 mx-auto"></div>
       <div className="text-center">

@@ -40,7 +40,7 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
       </div>
       <div className="flex navbar-center">
         <Link
-          href="/JonathanLevy"
+          // href="/JonathanLevy"
           className="btn btn-ghost normal-case text-4xl"
         >
           {title}
