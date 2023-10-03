@@ -56,7 +56,7 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            className="h-7 w-7"
+            className="h-5 w-5 lg:h-7 lg:w-7"
             fill="black"
             stroke="currentColor"
           >
@@ -74,7 +74,7 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-5 w-5 lg:h-7 lg:w-7"
             fill="black"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -90,7 +90,7 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
         <a className="btn btn-ghost btn-circle" href="/resume.pdf">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-5 w-5 lg:h-7 lg:w-7"
             fill="black"
             viewBox="0 0 42 42"
             stroke="currentColor"
