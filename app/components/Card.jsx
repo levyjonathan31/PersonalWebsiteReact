@@ -8,19 +8,19 @@ function Card({
   buttonTitle,
 }) {
   return (
-    <div className="card w-72 lg:w-96 bg-slate-500 shadow-xl mt-20 lg:mx-10 mx-auto">
+    <div className="card w-48 lg:w-72 bg-slate-500 shadow-xl mt-20 lg:mx-10 mx-auto">
       <figure className="px-10 pt-10">
         {image && (
           <img
             src={image}
             alt={altText}
-            width={200}
-            height={200}
+            width={120}
+            height={120}
             className="rounded-xl"
           />
         )}
       </figure>
-      <div className="card-body items-center text-center">
+      <div className="card-body items-center text-center text-sm">
         <h2 className="card-title">{title}</h2>
         <p className="italic">{dateRange}</p>
         <p>{description} </p>
