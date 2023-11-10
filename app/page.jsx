@@ -41,7 +41,7 @@ export default function Home() {
         <div className="lg:flex justify-center ">
           <Card
             title={"Open Source Club"}
-            dateRange={"Jan 2023 - Present"}
+            dateRange={"March 2023 - Present"}
             description={"Technical Lead for Manim project"}
             image={"/images/osc-logo.png"}
             altText={"Open Source Club Logo"}
@@ -97,6 +97,17 @@ export default function Home() {
             buttonTitle={"GitHub"}
           />
         </div>
+        <Card
+          title={"Manim"}
+          dateRange={"March 2023 - Present"}
+          description={
+            "Open Source Project for creating computer animations built with Python and Manim Library"
+          }
+          image={"/images/manim-logo.png"}
+          altText={"Manim Logo"}
+          link={"https://github.com/ufosc/manim-data-structures"}
+          buttonTitle={"GitHub"}
+        />
         <div className="lg:flex justify-center">
           <Card
             title={"Manuela"}
@@ -107,17 +118,6 @@ export default function Home() {
             image={"/images/manuela-image.png"}
             altText={"Manuela Logo"}
             link={"https://github.com/ByteOfKathy/manuela"}
-            buttonTitle={"GitHub"}
-          />
-          <Card
-            title={"Manim"}
-            dateRange={"January 2023 - Present"}
-            description={
-              "Open Source Project for creating computer animations built with Python and Manim Library"
-            }
-            image={"/images/manim-logo.png"}
-            altText={"Manim Logo"}
-            link={"https://github.com/ufosc/manim-data-structures"}
             buttonTitle={"GitHub"}
           />
           <Card
