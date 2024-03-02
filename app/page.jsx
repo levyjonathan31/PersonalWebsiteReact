@@ -91,9 +91,9 @@ export default function Home() {
         <div className="lg:flex justify-center">
           <Card
             title={"DynaCV"}
-            technologies={"Vite, React, AWS RDS, MySQL, GoogleOAuth"}
+            technologies={"Vite, React, Flask, AWS RDS, MySQL, GoogleOAuth"}
             description={
-              "Developing a Full Stack Web Application for creating and managing resumes with a few of my peers. Built with Vite, React, and AWS RDS."
+              "Developing a Full Stack Web Application for creating and managing resumes with a few of my peers. Built with Vite, React, Flask, and AWS RDS."
             }
             image={"/images/resume-dyna-icon.png"}
             altText={"Resume Image"}
