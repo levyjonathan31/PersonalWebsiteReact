@@ -34,9 +34,11 @@ export default function Home() {
         full-stack projects because they allow me to create applications that
         directly interact with users. I am also passionate about machine
         learning and data science, as I believe that they have the potential to
-        revolutionize industries and vastly improve the human experience. If you
-        are interested in learning more about me, please feel free to reach out
-        to me. I am always open to new opportunities and connections.
+        revolutionize industries and vastly improve the human experience.{" "}
+        <br></br> <br></br>If you are interested in learning more about me,
+        please feel free to reach out to me via LinkedIn or my contact
+        information in my resume. I am always open to new opportunities and
+        connections.
         {/* <br></br>
         <br></br>Click my name at the top of the page to learn more about me! */}
       </p>
