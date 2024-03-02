@@ -171,7 +171,7 @@ export default function Home() {
           />
           <Card
             title={"Manim"}
-            technologies={"January 2023 - Present"}
+            technologies={"Python, Manim"}
             description={
               "Open Source Project for creating computer animations built with Python and Manim Library for the purpose of creating educational content."
             }
