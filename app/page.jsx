@@ -136,9 +136,9 @@ export default function Home() {
           />
           <Card
             title={"Focus Fracture"}
-            technologies={"May 2023 - July 2023"}
+            technologies={"React, Node.js, Express, MongoDB"}
             description={
-              "MERN Stack Web Application for tracking tasks built with React, Node.js, Express, and MongoDB. Learned how to use a REST API to perform CRUD operations."
+              "MERN Stack Web Application for tracking tasks. Learned how to use a REST API to perform CRUD operations."
             }
             image={"/images/task-image.png"}
             altText={"Task Image"}
@@ -147,7 +147,7 @@ export default function Home() {
           />
           <Card
             title={"Autoencoder"}
-            technologies={"April 2023 - May 2023"}
+            technologies={"Python, PyTorch"}
             description={
               "Autoencoder for Fashion MNIST built with PyTorch. Adjusted hyperparamets to improve accuracy."
             }
@@ -160,7 +160,9 @@ export default function Home() {
         <div className="lg:flex justify-center">
           <Card
             title={"Manuela"}
-            technologies={"March 2023"}
+            technologies={
+              "React, OpenCV, Google Text To Speech, Deepface Library"
+            }
             description={
               "AI Counselor Hackathon Project for RoboTech 2023 built with Python. Integrated voice and facial recognition input to provide mental health support."
             }
