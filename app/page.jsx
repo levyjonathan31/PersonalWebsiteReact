@@ -26,7 +26,7 @@ export default function Home() {
       <h2 className="font-bold text-3xl mb-5 text-center" id={"About"}>
         About Me
       </h2>
-      <p className="text-xl w-3/4 mx-auto bg-slate-300 text-center">
+      <p className="text-l w-3/4 mx-auto bg-slate-300 text-center">
         As a Senior majoring in Computer Science at the University of Florida, I
         am actively seeking full-time opportunities in Software Engineering and
         Data Science. My passion lies in developing software solutions that

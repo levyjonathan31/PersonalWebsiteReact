@@ -8,7 +8,7 @@ function Card({
   buttonTitle,
 }) {
   return (
-    <div className="card w-48 lg:w-72 bg-slate-500 shadow-xl mt-20 lg:mx-10 mx-auto">
+    <div className="card w-72 bg-slate-500 shadow-xl mt-20 lg:mx-10 mx-auto">
       <figure className="px-10 pt-10">
         {image && (
           <img
