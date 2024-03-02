@@ -157,6 +157,17 @@ export default function Home() {
         </div>
         <div className="lg:flex justify-center">
           <Card
+            title={"Manim"}
+            dateRange={"March 2023 - Present"}
+            description={
+              "Open Source Project for creating computer animations built with Python and Manim Library"
+            }
+            image={"/images/manim-logo.png"}
+            altText={"Manim Logo"}
+            link={"https://github.com/ufosc/manim-data-structures"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
             title={"Manuela"}
             technologies={"March 2023"}
             description={
