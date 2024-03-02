@@ -27,9 +27,16 @@ export default function Home() {
         About Me
       </h2>
       <p className="text-xl w-3/4 mx-auto bg-slate-300 text-center">
-        I am a Senior at the University of Florida majoring in Computer Science.
-        I am currently looking for full-time opportunities in Software
-        Engineering. My interests include Machine Learning and Full Stack.
+        As a Senior majoring in Computer Science at the University of Florida, I
+        am actively seeking full-time opportunities in Software Engineering and
+        Data Science. My passion lies in developing software solutions that
+        directly impact and improve lives. I particularly enjoy working on
+        full-stack projects because they allow me to create applications that
+        directly interact with users. I am also passionate about machine
+        learning and data science, as I believe that they have the potential to
+        revolutionize industries and vastly improve the human experience. If you
+        are interested in learning more about me, please feel free to reach out
+        to me. I am always open to new opportunities and connections.
         {/* <br></br>
         <br></br>Click my name at the top of the page to learn more about me! */}
       </p>
@@ -40,23 +47,36 @@ export default function Home() {
         </h2>
         <div className="lg:flex justify-center ">
           <Card
-            title={"Open Source Club"}
-            dateRange={"Jan 2023 - Present"}
-            description={"Technical Lead for Manim project"}
-            image={"/images/osc-logo.png"}
-            altText={"Open Source Club Logo"}
-            link={"https://github.com/ufosc"}
+            title={"Electric Company Practicum Project"}
+            description={
+              "Data Scientist for the Electric Company Practicum Project. Working with 5 other undergraduate students to develop a machine learning model to predict voltage sags."
+            }
+            technologies={"Dec 2023 - Present"}
+            image={"/images/electric-icon.png"}
+            altText={"Reactonaut Logo"}
+            link={""}
             buttonTitle={"GitHub"}
           />
           <Card
             title={"Reactonaut"}
             description={
-              "Full Stack Developer for Early Stage Startup Reactonaut"
+              "Full Stack Developer for Early Stage Startup Reactonaut. Worked in a small team to develop a web application for helping users learn React."
             }
-            dateRange={"July 2023 - August 2023"}
+            technologies={"July 2023 - Aug 2023"}
             image={"/images/reactonaut-logo.png"}
             altText={"Reactonaut Logo"}
             link={"https://github.com/asj9469/Reactonaut"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
+            title={"Open Source Club"}
+            technologies={"Jan 2023 - Current"}
+            description={
+              "Technical Lead for Manim project. Leading a team of students to develop a Manim plugin for creating computer science animations."
+            }
+            image={"/images/osc-logo.png"}
+            altText={"Open Source Club Logo"}
+            link={"https://github.com/ufosc"}
             buttonTitle={"GitHub"}
           />
         </div>
@@ -68,9 +88,45 @@ export default function Home() {
         </h2>
         <div className="lg:flex justify-center">
           <Card
+            title={"DynaCV"}
+            technologies={"Vite, React, AWS RDS, MySQL, GoogleOAuth"}
+            description={
+              "Developing a Full Stack Web Application for creating and managing resumes with a few of my peers. Built with Vite, React, and AWS RDS."
+            }
+            image={"/images/resume-dyna-icon.png"}
+            altText={"Resume Image"}
+            link={"https://github.com/cbloodsworth/bedrock"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
+            title={"Geometry Dash AI"}
+            technologies={"Python, Keras, Rainbow DQN"}
+            description={
+              "Using Reinforcement Learning to train an AI to develop a Geometry Dash bot capable of playing any level. Built with Python, Keras, and Rainbow DQN."
+            }
+            image={"/images/geo-dash-icon.png"}
+            altText={"Manim Logo"}
+            link={"https://github.com/ufosc/manim-data-structures"}
+            buttonTitle={"GitHub"}
+          />
+          <Card
+            title={"Numpy Convolutional Neural Network"}
+            technologies={"Python, Numpy, SciPy"}
+            description={
+              "Built a convolutional neural network from scratch using Numpy and SciPy for the purpose of learning the inner workings of neural networks."
+            }
+            image={"/images/neural-net-icon.png"}
+            link={"https://github.com/levyjonathan31/GoogleCollabCNN"}
+            buttonTitle={"GitHub"}
+          />
+        </div>
+        <div className="lg:flex justify-center">
+          <Card
             title={"Personal Website"}
-            dateRange={"September 2023 - Present"}
-            description={"Personal Website built with React and TailwindCSS"}
+            technologies={"React, TailwindCSS"}
+            description={
+              "Personal Website built with React and TailwindCSS. It's what you are on right now!"
+            }
             image={"/images/react-logo.png"}
             altText={"React Logo"}
             link={"https://github.com/levyjonathan31/PersonalWebsiteReact"}
@@ -78,9 +134,9 @@ export default function Home() {
           />
           <Card
             title={"Focus Fracture"}
-            dateRange={"May 2023 - July 2023"}
+            technologies={"May 2023 - July 2023"}
             description={
-              "MERN Stack Web Application for tracking tasks built with React, Node.js, Express, and MongoDB"
+              "MERN Stack Web Application for tracking tasks built with React, Node.js, Express, and MongoDB. Learned how to use a REST API to perform CRUD operations."
             }
             image={"/images/task-image.png"}
             altText={"Task Image"}
@@ -89,8 +145,10 @@ export default function Home() {
           />
           <Card
             title={"Autoencoder"}
-            dateRange={"April 2023 - May 2023"}
-            description={"Autoencoder for Fashion MNIST built with PyTorch"}
+            technologies={"April 2023 - May 2023"}
+            description={
+              "Autoencoder for Fashion MNIST built with PyTorch. Adjusted hyperparamets to improve accuracy."
+            }
             image={"/images/autoencoder-image.png"}
             altText={"Autoencoder Image"}
             link={"https://github.com/levyjonathan31/MMLFinalProject"}
@@ -100,9 +158,9 @@ export default function Home() {
         <div className="lg:flex justify-center">
           <Card
             title={"Manuela"}
-            dateRange={"March 2023"}
+            technologies={"March 2023"}
             description={
-              "AI Counselor Hackathon Project for RoboTech 2023 built with Python"
+              "AI Counselor Hackathon Project for RoboTech 2023 built with Python. Integrated voice and facial recognition input to provide mental health support."
             }
             image={"/images/manuela-image.png"}
             altText={"Manuela Logo"}
@@ -111,9 +169,9 @@ export default function Home() {
           />
           <Card
             title={"Manim"}
-            dateRange={"January 2023 - Present"}
+            technologies={"January 2023 - Present"}
             description={
-              "Open Source Project for creating computer animations built with Python and Manim Library"
+              "Open Source Project for creating computer animations built with Python and Manim Library for the purpose of creating educational content."
             }
             image={"/images/manim-logo.png"}
             altText={"Manim Logo"}
@@ -121,29 +179,33 @@ export default function Home() {
             buttonTitle={"GitHub"}
           />
           <Card
-            title={"Former Personal Website"}
-            dateRange={"November 2022 - September 2023"}
-            description={"Personal Website built with HTML and CSS"}
-            image={"/images/personal-icon.png"}
-            link={"https://github.com/levyjonathan31/levyjonathan31.github.io"}
-            buttonTitle={"GitHub"}
-          />
-        </div>
-        <div className="lg:flex justify-center">
-          <Card
             title={"Protest Plots"}
-            dateRange={"September 2022 - December 2022"}
-            description={"Website for organizing protests built with React"}
+            technologies={"React"}
+            description={
+              "Website for organizing protests built with React. I was responsible for the functionality of the buttons."
+            }
             image={"/images/protestplots-image.png"}
             altText={"Protest Plots Image"}
             link={"https://github.com/tiffdefaria/ProtestPlots-app:"}
             buttonTitle={"GitHub"}
           />
+        </div>
+        <div className="lg:flex justify-center">
+          <Card
+            title={"Former Personal Website"}
+            technologies={"HTML, CSS"}
+            description={
+              "Personal Website built with HTML and CSS. My first wesbite... I have come a long way since then!"
+            }
+            image={"/images/personal-icon.png"}
+            link={"https://github.com/levyjonathan31/levyjonathan31.github.io"}
+            buttonTitle={"GitHub"}
+          />
           <Card
             title={"You Owe Me"}
-            dateRange={"July 2022 - August 2022"}
+            technologies={"C++, SFML"}
             description={
-              "C++ Application for reducing transactions to resolve debts between friends"
+              "C++ Application for reducing transactions to resolve debts between friends."
             }
             image={"/images/you-owe-me-image.png"}
             altText={"You Owe Me Image"}
@@ -152,14 +214,17 @@ export default function Home() {
           />
           <Card
             title={"Minesweeper"}
-            dateRange={"July 2021 - August 2021"}
-            description={"Minesweeper Game built with C++"}
+            technologies={"C++, SFML"}
+            description={
+              "Minesweeper Game built with C++ and SFML. Adhered to all the rules of the game."
+            }
             image={"/images/minesweeper-image.png"}
             altText={"Minesweeper Image"}
             link={"https://github.com/levyjonathan31/Minesweeper-Project"}
             buttonTitle={"GitHub"}
           />
         </div>
+        <div>&nbsp;</div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 function Card({
   title,
-  dateRange,
+  technologies,
   description,
   image,
   altText,
@@ -22,7 +22,7 @@ function Card({
       </figure>
       <div className="card-body items-center text-center text-sm">
         <h2 className="card-title">{title}</h2>
-        <p className="italic">{dateRange}</p>
+        <p className="italic">{technologies}</p>
         <p>{description} </p>
         <div className="card-actions">
           {link && (
