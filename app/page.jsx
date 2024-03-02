@@ -106,7 +106,7 @@ export default function Home() {
             }
             image={"/images/geo-dash-icon.png"}
             altText={"Manim Logo"}
-            link={"https://github.com/ufosc/manim-data-structures"}
+            link={"https://github.com/levyjonathan31/GeometryDashBot"}
             buttonTitle={"GitHub"}
           />
           <Card
