@@ -61,6 +61,8 @@ export default function Home() {
             link={""}
             buttonTitle={""}
           />
+	  </div>
+	  <div className="lg:flex justify-center">
           <Card
             title={"Electric Company Practicum Project"}
             description={
