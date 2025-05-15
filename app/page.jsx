@@ -32,9 +32,8 @@ export default function Home() {
         enhancing data integration to improve client decision-making, and optimizing backend performance 
         through refined SQL queries. I'm passionate about creating systems that are both efficient and intuitive, 
         delivering faster performance and clearer insights into critical financial data.
-
-        Outside of work, I enjoy exploring machine learning, game development, and 
-        finding creative ways to build things that are both technically sound and fun to use.
+	<br></br>
+        Outside of work, I enjoy exploring machine learning and playing video games.
 
         <br></br> <br></br>If you are interested in learning more about me,
         please feel free to reach out to me via LinkedIn. I love connecting with
