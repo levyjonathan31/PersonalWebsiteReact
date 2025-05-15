@@ -27,18 +27,20 @@ export default function Home() {
         About Me
       </h2>
       <p className="text-l w-3/4 mx-auto bg-slate-300 text-center">
-        As a Senior majoring in Computer Science at the University of Florida, I
-        am actively seeking full-time opportunities in Software Engineering and
-        Data Science. My passion lies in developing software solutions that
-        directly impact and improve lives. I particularly enjoy working on
-        full-stack projects because they allow me to create applications that
-        directly interact with users. I am also passionate about machine
-        learning and data science, as I believe that they have the potential to
-        revolutionize industries and vastly improve the human experience.{" "}
+        I'm a full-stack developer at BNY Pershing, building modern, scalable tools for financial services. 
+        My recent projects involve developing Angular applications within a micro frontend architecture, 
+        enhancing data integration to improve client decision-making, and optimizing backend performance 
+        through refined SQL queries. I'm passionate about creating systems that are both efficient and intuitive, 
+        delivering faster performance and clearer insights into critical financial data.
+
+        Outside of work, I enjoy exploring machine learning, game development, and 
+        finding creative ways to build things that are both technically sound and fun to use.
+
         <br></br> <br></br>If you are interested in learning more about me,
-        please feel free to reach out to me via LinkedIn or my contact
-        information in my resume. I am always open to new opportunities and
-        connections.
+        please feel free to reach out to me via LinkedIn. I love connecting with
+        new people and discussing new ideas. I am always open to new opportunities
+        and collaborations, so don't hesitate to reach out if you have a project
+        in mind or just want to chat!
         {/* <br></br>
         <br></br>Click my name at the top of the page to learn more about me! */}
       </p>
@@ -48,6 +50,17 @@ export default function Home() {
           Experience
         </h2>
         <div className="lg:flex justify-center ">
+          <Card
+            title={"BNY Pershing"}
+            description={
+              "Full Stack Developer at BNY Pershing. Building modern, scalable tools for financial services. Working with Angular and Java Spring Boot."
+            }
+            technologies={"August 2024 - Present"}
+            image={"/images/bny-logo.png"}
+            altText={"BNY Logo"}
+            link={""}
+            buttonTitle={""}
+          />
           <Card
             title={"Electric Company Practicum Project"}
             description={
