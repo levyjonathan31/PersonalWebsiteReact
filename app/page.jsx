@@ -67,7 +67,7 @@ export default function Home() {
             description={
               "Data Scientist for the Electric Company Practicum Project. Working with 5 other undergraduate students to develop a machine learning model to predict voltage sags."
             }
-            technologies={"Dec 2023 - May 2024"}
+            technologies={"Dec 2023 - April 2024"}
             image={"/images/electric-icon.png"}
             altText={"Reactonaut Logo"}
             link={""}
