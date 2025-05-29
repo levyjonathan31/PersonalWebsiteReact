@@ -216,7 +216,7 @@ export default function Home() {
               "Personal Website built with HTML and CSS. My first wesbite... I have come a long way since then!"
             }
             image={"/images/personal-icon.png"}
-            link={"https://github.com/levyjonathan31/levyjonathan31.github.io"}
+            link={"https://github.com/levyjonathan31/OldPersonalWebsiteRetired"}
             buttonTitle={"GitHub"}
           />
           <Card
