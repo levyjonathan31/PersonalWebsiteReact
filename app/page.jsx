@@ -102,7 +102,7 @@ export default function Home() {
     <>
       {/* Neural Net Construction Progress Indicator */}
       {showProgress && (
-        <div className={`fixed top-20 left-2 right-2 sm:left-auto sm:right-4 sm:w-auto w-auto z-50 bg-slate-900/80 backdrop-blur-sm border border-red-500/50 rounded-lg p-3 text-white transition-opacity duration-1000 max-w-[calc(100vw-16px)] sm:max-w-[250px] ${constructionProgress >= 100 ? 'opacity-0' : 'opacity-100'}`}>
+        <div className={`fixed top-20 right-2 sm:right-4 z-50 bg-slate-900/80 backdrop-blur-sm border border-red-500/50 rounded-lg p-3 text-white transition-opacity duration-1000 max-w-[calc(100vw-16px)] sm:max-w-[250px] ${constructionProgress >= 100 ? 'opacity-0' : 'opacity-100'}`}>
           <div className="flex items-center gap-2">
             <div className="animate-pulse">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
