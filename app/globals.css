@@ -56,3 +56,8 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #3b82f6 #1e293b; /* thumb and track colors */
 }
+
+/* Scroll padding for sticky navigation */
+html {
+  scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
+}

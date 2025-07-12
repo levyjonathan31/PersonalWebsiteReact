@@ -41,6 +41,11 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
                 {thirdOption}
               </a>
             </li>
+            <li>
+              <a href="#Contact" className="text-slate-200 hover:text-blue-400 hover:bg-blue-500/20 transition-all duration-300 rounded-lg">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </div>
