@@ -161,18 +161,26 @@ export default function Home() {
         <h2 className="font-bold text-3xl mb-5 text-white" id="Experience">
           Experience
         </h2>
-        <div className="lg:flex justify-center ">
-          <Card
-            title={"BNY Pershing"}
-            description={
-              "Full Stack Developer at BNY Pershing. Building modern, scalable tools for financial services. Working with Angular and Java Spring Boot."
-            }
-            technologies={"August 2024 - Present"}
-            image={"/images/bny-logo.png"}
-            altText={"BNY Logo"}
-            link={""}
-            buttonTitle={""}
-          />
+        <div className="lg:flex justify-center mb-16">
+          <div className="relative transform scale-110 lg:scale-125 group">
+            {/* "Current Position" Badge - positioned on the actual card's top border */}
+            <div className="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-transform duration-300 group-hover:-translate-y-6">
+              <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-3 py-1 rounded-full shadow-lg transition-all duration-300 group-hover:shadow-xl">
+                CURRENT
+              </span>
+            </div>
+            <Card
+              title={"BNY Pershing"}
+              description={
+                "Full Stack Developer at BNY Pershing. Building modern, scalable tools for financial services. Working with Angular and Java Spring Boot."
+              }
+              technologies={"August 2024 - Present"}
+              image={"/images/bny-logo.png"}
+              altText={"BNY Logo"}
+              link={""}
+              buttonTitle={""}
+            />
+          </div>
 	  </div>
 	  <div className="lg:flex justify-center">
           <Card
@@ -339,10 +347,10 @@ export default function Home() {
             </div>
           )}
 
-          {/* Open Source & Educational Tab */}
+          {/* Open Source Tab */}
           {activeTab === 'opensource' && (
             <div className="animate-in fade-in duration-300">
-              <h3 className="text-xl font-semibold text-blue-400 mb-6">Open Source & Educational</h3>
+              <h3 className="text-xl font-semibold text-blue-400 mb-6">Open Source</h3>
               <div className="lg:flex justify-center">
                 <Card
                   title={"Manim"}
