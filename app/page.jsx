@@ -34,7 +34,7 @@ export default function Home() {
           spacing: 20.00
         });
 
-        // Animate maxDistance from 1 to 22 over 50 seconds
+        // Animate maxDistance from 1 to 22 over 25 seconds
         const animateMaxDistance = () => {
           const duration = 25000; 
           const startValue = 0.2;
@@ -147,7 +147,7 @@ export default function Home() {
           I'm a full-stack developer at BNY Pershing, where I build tools for financial services. 
           Currently, I'm working on Angular applications in a micro frontend setup, 
           improving data integration for better client insights, and writing SQL queries 
-          to make our backend faster.
+          to deliver the most relevant data to our clients.
         </p>
         
         <p className="text-lg leading-relaxed">
