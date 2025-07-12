@@ -26,12 +26,12 @@ export default function Home() {
           minHeight: 200.00,
           minWidth: 200.00,
           scale: 1.00,
-          scaleMobile: 0.8,
+          scaleMobile: 0.75,
           color: 0xff0000,
           backgroundColor: 0x0a0f1c,
           points: 20.00,
           maxDistance: 1.00,
-          spacing: 20.00
+          spacing: 15.00
         });
 
         // Animate maxDistance from 4 to 22 over 25 seconds
@@ -116,7 +116,7 @@ export default function Home() {
       {/* Vanta Background - Separate element that won't interfere with content */}
       <div 
         ref={vantaRef} 
-        className="fixed inset-0 w-full h-full"
+        className="fixed inset-0 w-full h-full overflow-hidden"
       />
       
       {/* Main Content - Completely separate from Vanta */}
@@ -164,7 +164,7 @@ export default function Home() {
         <div className="lg:flex justify-center mb-16">
           <div className="relative transform scale-110 lg:scale-125 group">
             {/* "Current Position" Badge - positioned on the actual card's top border */}
-            <div className="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-transform duration-300 group-hover:-translate-y-6">
+            <div className="absolute top-16 sm:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-transform duration-300 group-hover:-translate-y-6">
               <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-3 py-1 rounded-full shadow-lg transition-all duration-300 group-hover:shadow-xl">
                 CURRENT
               </span>
