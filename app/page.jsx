@@ -26,7 +26,7 @@ export default function Home() {
           minHeight: 200.00,
           minWidth: 200.00,
           scale: 1.00,
-          scaleMobile: 1.00,
+          scaleMobile: 0.8,
           color: 0xff0000,
           backgroundColor: 0x0a0f1c,
           points: 20.00,
@@ -34,22 +34,22 @@ export default function Home() {
           spacing: 20.00
         });
 
-        // Animate maxDistance from 1 to 22 over 25 seconds
+        // Animate maxDistance from 4 to 22 over 25 seconds
         const animateMaxDistance = () => {
           const duration = 25000; 
-          const startValue = 0.2;
+          const startValue = 3;
           const endValue = 22;
           const startTime = Date.now();
           
           const animate = () => {
             const elapsed = Date.now() - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            
+
             // Simple linear animation
             const currentValue = startValue + (endValue - startValue) * progress;
             
-            // Update progress state for the indicator
-            const progressPercentage = Math.round((currentValue / endValue) * 100);
+            // Update progress state for the indicator (1-100%)
+            const progressPercentage = Math.round(progress * 100);
             setConstructionProgress(progressPercentage);
             
             if (vantaEffect.current) {
@@ -94,7 +94,7 @@ export default function Home() {
     <>
       {/* Neural Net Construction Progress Indicator */}
       {showProgress && (
-        <div className="fixed top-20 right-4 z-50 bg-slate-900/80 backdrop-blur-sm border border-red-500/50 rounded-lg p-3 text-white">
+        <div className={`fixed top-20 right-4 z-50 bg-slate-900/80 backdrop-blur-sm border border-red-500/50 rounded-lg p-3 text-white transition-opacity duration-1000 ${constructionProgress >= 100 ? 'opacity-0' : 'opacity-100'}`}>
           <div className="flex items-center gap-2">
             <div className="animate-pulse">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>

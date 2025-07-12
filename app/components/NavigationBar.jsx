@@ -3,9 +3,9 @@ import Link from "next/link";
 
 function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
   return (
-    <div className="navbar bg-slate-800/80 backdrop-blur-lg border-b border-blue-400/30 shadow-lg shadow-blue-400/10">
+    <div className="navbar bg-slate-800/80 backdrop-blur-lg border-b border-blue-400/30 shadow-lg shadow-blue-400/10 relative z-[9998]">
       <div className="navbar-start">
-        <div className="dropdown">
+        <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle text-white hover:bg-blue-500/20 hover:border-blue-400/50 transition-all duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-slate-800/95 backdrop-blur-lg rounded-box w-52 border border-blue-400/30"
+            className="menu menu-sm dropdown-content mt-3 z-[9999] p-2 shadow-xl bg-slate-800/95 backdrop-blur-lg rounded-box w-52 border border-blue-400/30 absolute left-0 top-full"
           >
             <li>
               <a href={`#${firstOption}`} className="text-slate-200 hover:text-blue-400 hover:bg-blue-500/20 transition-all duration-300 rounded-lg">
