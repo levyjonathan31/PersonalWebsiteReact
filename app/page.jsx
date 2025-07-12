@@ -39,7 +39,7 @@ export default function Home() {
           const duration = 25000; 
           const startValue = 3;
           const isMobile = window.innerWidth < 640; // sm breakpoint
-          const endValue = isMobile ? 20 : 22;
+          const endValue = isMobile ? 15 : 22;
           const startTime = Date.now();
           
           // Update points for mobile
@@ -102,14 +102,14 @@ export default function Home() {
     <>
       {/* Neural Net Construction Progress Indicator */}
       {showProgress && (
-        <div className={`fixed top-20 right-4 z-50 bg-slate-900/80 backdrop-blur-sm border border-red-500/50 rounded-lg p-3 text-white transition-opacity duration-1000 ${constructionProgress >= 100 ? 'opacity-0' : 'opacity-100'}`}>
+        <div className={`fixed top-20 right-2 sm:right-4 z-50 bg-slate-900/80 backdrop-blur-sm border border-red-500/50 rounded-lg p-3 text-white transition-opacity duration-1000 max-w-[200px] sm:max-w-none ${constructionProgress >= 100 ? 'opacity-0' : 'opacity-100'}`}>
           <div className="flex items-center gap-2">
             <div className="animate-pulse">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
             </div>
-            <span className="text-sm font-mono">Constructing Network</span>
+            <span className="text-xs sm:text-sm font-mono">Constructing Network</span>
           </div>
-          <div className="text-xl font-bold text-red-400 mt-1">
+          <div className="text-lg sm:text-xl font-bold text-red-400 mt-1">
             {constructionProgress}%
           </div>
           <div className="w-full bg-slate-700 rounded-full h-1 mt-2">
@@ -172,7 +172,7 @@ export default function Home() {
         <div className="lg:flex justify-center mb-16">
           <div className="relative transform scale-110 lg:scale-125 group">
             {/* "Current Position" Badge - positioned on the actual card's top border */}
-            <div className="absolute top-4 sm:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-transform duration-300 group-hover:-translate-y-6">
+            <div className="absolute top-12 sm:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-transform duration-300 group-hover:-translate-y-6">
               <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-3 py-1 rounded-full shadow-lg transition-all duration-300 group-hover:shadow-xl">
                 CURRENT
               </span>
