@@ -63,10 +63,14 @@ html {
 }
 
 /* Disable horizontal scrolling completely */
-html,
+html {
+  max-width: 100vw;
+}
+
 body {
   overflow-x: hidden;
   max-width: 100vw;
+  position: relative;
 }
 
 * {

@@ -172,7 +172,7 @@ export default function Home() {
         <div className="lg:flex justify-center mb-16">
           <div className="relative transform scale-110 lg:scale-125 group">
             {/* "Current Position" Badge - positioned on the actual card's top border */}
-            <div className="absolute top-20 sm:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-transform duration-300 group-hover:-translate-y-6">
+            <div className="absolute top-0 sm:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-transform duration-300 group-hover:-translate-y-6">
               <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-3 py-1 rounded-full shadow-lg transition-all duration-300 group-hover:shadow-xl">
                 CURRENT
               </span>
