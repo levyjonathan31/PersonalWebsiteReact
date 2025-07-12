@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function NavigationBar({ title, firstOption, secondOption, thirdOption }) {
   return (
-    <div className="navbar bg-slate-800/80 backdrop-blur-lg border-b border-blue-400/30 shadow-lg shadow-blue-400/10 relative z-[9998]">
+    <div className="navbar bg-slate-800/80 backdrop-blur-lg border-b border-blue-400/30 shadow-lg shadow-blue-400/10 sticky top-0 z-[9998]">
       <div className="navbar-start">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle text-white hover:bg-blue-500/20 hover:border-blue-400/50 transition-all duration-300">

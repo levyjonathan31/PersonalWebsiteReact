@@ -26,7 +26,7 @@ export default function Home() {
           minHeight: 200.00,
           minWidth: 200.00,
           scale: 1.00,
-          scaleMobile: 0.75,
+          scaleMobile: 1.00,
           color: 0xff0000,
           backgroundColor: 0x0a0f1c,
           points: 20.00,
@@ -34,12 +34,20 @@ export default function Home() {
           spacing: 15.00
         });
 
-        // Animate maxDistance from 4 to 22 over 25 seconds
+        // Animate maxDistance from 3 to 22 (desktop) or 20 (mobile) over 25 seconds
         const animateMaxDistance = () => {
           const duration = 25000; 
           const startValue = 3;
-          const endValue = 22;
+          const isMobile = window.innerWidth < 640; // sm breakpoint
+          const endValue = isMobile ? 20 : 22;
           const startTime = Date.now();
+          
+          // Update points for mobile
+          if (isMobile && vantaEffect.current) {
+            vantaEffect.current.setOptions({
+              points: 10.00
+            });
+          }
           
           const animate = () => {
             const elapsed = Date.now() - startTime;
@@ -120,7 +128,7 @@ export default function Home() {
       />
       
       {/* Main Content - Completely separate from Vanta */}
-      <div className="relative bg-slate-900/20 backdrop-blur-sm text-white min-h-screen">
+      <div className="relative bg-slate-900/20 backdrop-blur-sm text-white min-h-screen w-full">
       <NavigationBar
         title={"Jonathan Levy"}
         firstOption={"About"}
@@ -164,7 +172,7 @@ export default function Home() {
         <div className="lg:flex justify-center mb-16">
           <div className="relative transform scale-110 lg:scale-125 group">
             {/* "Current Position" Badge - positioned on the actual card's top border */}
-            <div className="absolute top-16 sm:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-transform duration-300 group-hover:-translate-y-6">
+            <div className="absolute top-4 sm:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 transition-transform duration-300 group-hover:-translate-y-6">
               <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-3 py-1 rounded-full shadow-lg transition-all duration-300 group-hover:shadow-xl">
                 CURRENT
               </span>
