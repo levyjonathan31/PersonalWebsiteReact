@@ -215,7 +215,7 @@ export default function Home() {
           />
           <Card
             title={"Open Source Club"}
-            technologies={"Jan 2023 - Present"}
+            technologies={"Jan 2023 - May 2024"}
             description={
               "Technical Lead for Manim project. Leading a team of students to develop a Manim plugin for creating computer science animations."
             }
