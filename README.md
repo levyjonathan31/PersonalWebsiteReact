@@ -38,5 +38,3 @@ This site is continuously deployed via Vercel — push to main to trigger redepl
 Feel free to reach out or connect:
 
 LinkedIn: [Jonathan Levy](www.linkedin.com/in/levyjonathan31)
-
-Let me know if you'd like to add blog support, analytics setup, or any other personal touches.
